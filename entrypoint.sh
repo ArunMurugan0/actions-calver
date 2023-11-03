@@ -73,10 +73,10 @@ if [ "${CREATE_RELEASE}" = "true" ] || [ "${CREATE_RELEASE}" = true ]; then
   echo "${OUTPUT}" | jq
 fi
 
-echo "release=${NEXT_RELEASE}" >>$GITHUB_OUTPUT
-echo "title=${NAME}" >>$GITHUB_OUTPUT
-echo "changelog=${MESSAGE}" >>$GITHUB_OUTPUT
-echo "draft=${DRAFT}" >>$GITHUB_OUTPUT
-echo "pre=${PRE}" >>$GITHUB_OUTPUT
+echo "release=${NEXT_RELEASE}" >> $GITHUB_OUTPUT
+# echo "title=${NAME}" >>$GITHUB_OUTPUT
+# echo "changelog=${MESSAGE}" >>$GITHUB_OUTPUT
+# echo "draft=${DRAFT}" >>$GITHUB_OUTPUT
+# echo "pre=${PRE}" >>$GITHUB_OUTPUT
 
 
